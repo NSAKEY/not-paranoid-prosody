@@ -38,9 +38,6 @@ modules_enabled = {
                 "disco"; -- Service discovery
                 "posix"; -- POSIX functionality, sends server to background, enables syslog, etc.
 
-        -- OTR
-                "otr"; -- Off The Record module. Essential for cypherpunks everywhere.
-
         -- Not essential, but recommended
                 "private"; -- Private XML storage (for room bookmarks, etc.)
                 "vcard"; -- Allow users to set vCards
@@ -147,11 +144,11 @@ authentication = "internal_hashed"
 
 -- Logging configuration
 -- For advanced logging see http://prosody.im/doc/logging
--- log = {
-        -- info = "/var/log/prosody/prosody.log"; -- Change 'info' to 'debug' for verbose logging
+log = {
+        info = "/var/log/prosody/prosody.log"; -- Change 'info' to 'debug' for verbose logging
         -- error = "/var/log/prosody/prosody.err";
         -- "*syslog";
--- }
+}
 
 ----------- Interface Binding -----------
 -- Uncomment the c2s_interfaces line if you want to bind port 5222 to localhost.
