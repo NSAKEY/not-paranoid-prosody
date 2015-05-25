@@ -33,8 +33,8 @@ apt-get install -y prosody lua-event
 service prosody stop
 
 # SSL/TLS prep for prosody
-openssl genrsa -out /etc/prosody/certs/example.key 4096
-openssl req -new -key /etc/prosody/certs/example.key -out /etc/prosody/certs/example.crt
+openssl genrsa -out /etc/prosody/certs/xmpp.key 4096
+openssl req -new -key /etc/prosody/certs/xmpp.key -out /etc/prosody/certs/xmpp.crt
 openssl dhparam -out /etc/prosody/certs/dh-2048.pem 2048
 chown prosody:prosody /etc/prosody/certs/*
 chmod 600 /etc/prosody/certs/*
